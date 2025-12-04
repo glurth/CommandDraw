@@ -1,0 +1,12 @@
+{
+  "name": "com.glurth.commanddraw",
+  "version": "1.0.0",
+  "displayName": "CommandDraw",
+  "description": "Unity class for drawing basic shapes to textures",
+  "unity": "2022.3",
+  "dependencies": {},
+  "author": {
+    "name": "Glurth"
+  },
+  "hideInEditor": "false"
+}
