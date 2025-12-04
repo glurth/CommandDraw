@@ -12,13 +12,13 @@ namespace EyE.Graphics
     /// </summary>
     public class DrawCommandListRenderer : MonoBehaviour
     {
-
-
         /// <summary>
         /// Ordered list of user-authored draw command definitions. Each item expands into one or more packed GPU-ready commands.
         /// </summary>
         [SerializeReference]
         public List<DrawCommandBase> drawCommands = new List<DrawCommandBase>();
+
+
 
         /// <summary>
         /// Flattened list of packed draw commands generated from <see cref="drawCommands"/>. Sent directly to the shader.
@@ -30,12 +30,18 @@ namespace EyE.Graphics
         /// </summary>
         public Color backgroundColor = Color.white;
 
+        /// <summary>
+        /// scales the level of anti-aliasing
+        /// </summary>
         public float antiAliasingScalar = 1f;
 
         /// <summary>
-        /// Material instance created from <see cref="ShaderName"/>. Used during blit to render all commands.
+        /// Forces a regeneration of the output.  Users should call this if changing/animating values in the drawCommands list.
         /// </summary>
-        Material drawListFragShaderBasedMaterial;
+        public void SetDirty()
+        {
+            DoRender();
+        }
 
         #region renderTextureStuff
 
@@ -92,6 +98,12 @@ namespace EyE.Graphics
 
         #endregion
 
+
+        /// <summary>
+        /// Material instance created from <see cref="ShaderName"/>. Used during blit to render all commands.
+        /// </summary>
+        Material drawListFragShaderBasedMaterial;
+
         /// <summary>
         /// GPU buffer holding packed draw commands for the shader.
         /// </summary>
@@ -101,19 +113,6 @@ namespace EyE.Graphics
         /// The name of the shader used to render the draw list. Override to substitute a custom shader.
         /// </summary>
         protected virtual string ShaderName => "Unlit/DrawListFragShader";
-
-        /// <summary>
-        /// Finds the shader and constructs the working material.
-        /// </summary>
-        private void Awake()
-        {
-#if UNITY_EDITOR
-            Cleanup(); // free old buffer if present
-            if (drawListFragShaderBasedMaterial != null)
-                DestroyImmediate(drawListFragShaderBasedMaterial);
-#endif
-            CreateDrawShaderMaterialIfNeeded();
-        }
 
         private void CreateDrawShaderMaterialIfNeeded()
         {
@@ -192,18 +191,6 @@ namespace EyE.Graphics
             }
         }
 
-
-        private bool doRenderOnUpdate = false;
-
-        /// <summary>
-        /// Automatically renders when the object becomes enabled.
-        /// </summary>
-        private void OnEnable()
-        {
-            //DoRender();
-            doRenderOnUpdate = true;
-        }
-
         /// <summary>
         /// Full render pipeline: expand commands, post-process, upload, draw, display, cleanup.
         /// </summary>
@@ -218,7 +205,40 @@ namespace EyE.Graphics
             Cleanup();
         }
 
-        private void Update()
+
+
+        #region Unity monobehavior life-cycle stuff
+
+        private bool doRenderOnUpdate = false;
+
+        /// <summary>
+        /// Finds the shader and constructs the working material.
+        /// </summary>
+        private void Awake()
+        {
+#if UNITY_EDITOR
+            Cleanup(); // free old buffer if present
+            if (drawListFragShaderBasedMaterial != null)
+                DestroyImmediate(drawListFragShaderBasedMaterial);
+#endif
+            CreateDrawShaderMaterialIfNeeded();
+        }
+
+        /// <summary>
+        /// Automatically renders when the object becomes enabled.
+        /// </summary>
+        private void OnEnable()
+        {
+            doRenderOnUpdate = true;
+        }
+
+
+
+        /// <summary>
+        /// Executed every frame, usually does nothing, unless onEnable or onValidate, trigger it via doRenderOnUpdate.
+        /// Derived classes may override this function, but should make sure to call this base class version at some point.
+        /// </summary>
+        protected virtual void Update()
         {
             if (doRenderOnUpdate)
                 DoRender();
@@ -246,11 +266,17 @@ namespace EyE.Graphics
                 doRenderOnUpdate = true;// DoRender();
         }
 
+        /// <summary>
+        /// releases command buffer
+        /// </summary>
         private void OnDisable()
         {
             Cleanup();
         }
 
+        /// <summary>
+        /// releases command buffer and destroys the temp/private material.
+        /// </summary>
         private void OnDestroy()
         {
             Cleanup();
@@ -262,5 +288,6 @@ namespace EyE.Graphics
                 Destroy(drawListFragShaderBasedMaterial);
 #endif
         }
+        #endregion
     }
 }
