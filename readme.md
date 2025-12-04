@@ -13,11 +13,11 @@ A Unity package for high-performance, GPU-based 2D shape rendering directly to t
 
 ## 🚀 Key Features
 
-* **GPU-Accelerated:** Rendering is performed entirely in a fragment shader using **Signed Distance Fields (SDFs)**, ensuring high performance and resolution-independent anti-aliasing.
-* **Editor Workflow:** Fully integrated with the Unity Editor using a **`ReorderableList`** for easy management (adding, removing, reordering) of all draw commands.
+* **GPU-Accelerated:** Rendering is performed entirely in a fragment shader using **Signed Distance Fields (SDFs)**.  This provides high performance for most use cases, and resolution-independent anti-aliasing.
+* **Editor Workflow:** Fully integrated with the Unity Editor using a **`ReorderableList`** for easy management (adding, removing, reordering) of all draw commands.  The generated output updates automatically when commands are changed by the user, via `[ExecuteAlways]` and `OnValidate`.
 * **Flexible Coordinate Systems:** Supports drawing using dynamic screen-space coordinates or fixed, normalized **[0, 1] UV space** (via `DrawCommandListRendererPixelBased`) for procedural texture generation.
 * **Easy Abstraction:** High-level C# classes (e.g., `CircleDrawCommand`, `OrientedRectDrawCommand`) manage the complexity of packing data for the GPU.  The `BaseDrawCommand` abstract base class allows for user creation of custom draw commands.
-* **Advanced Compositing:** Uses **pre-multiplied alpha blending** to composite overlapping shapes within the draw list.
+* **Alpha Compositing:** Uses **pre-multiplied alpha blending** to composite overlapping shapes within the draw list.
 
 
 ---
@@ -29,9 +29,9 @@ This package uses the Unity Package Manager (UPM) format.
 1.  Open the **Package Manager** in Unity (`Window > Package Manager`).
 2.  Click the **+** button in the top-left corner.
 3.  Select **"Add package from git URL..."**
-4.  Paste the repository URL (Replace with your actual repo URL when available):
+4.  Paste the repository URL:
     ```
-    # [Insert your Git URL here]
+    https://github.com/glurth/CommandDraw.git
     ```
 
 ---
@@ -45,8 +45,9 @@ The core of the system is the **`DrawCommandListRenderer`** component.
 1.  Create a new empty **GameObject** in your scene.
 2.  Add the `DrawCommandListRenderer` component to it.
 3.  Assign a **Display Material** to the `Texture Based Display Material` field (e.g., a standard Unity UI material that uses the `_MainTex` property).
+4.  Create (or add to this object) a display renderer of your choice and assign the **Display Material** to it.
 
-The renderer will automatically handle the pipeline: finding the shader, allocating a `RenderTexture`, converting your commands, and running the fragment shader.
+The DrawCommandListRenderer will automatically handle the pipeline: finding the shader, allocating a `RenderTexture`, converting your commands, running the fragment shader, and assigning the generated texture to the display material.
 
 ### 2. The Editor Interface
 
