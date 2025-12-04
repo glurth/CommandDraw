@@ -1,19 +1,23 @@
 using UnityEditor;
-using UnityEditorInternal;
+//using UnityEditorInternal;
 using UnityEngine;
+using EyE.Graphics;
 
-[CustomEditor(typeof(DrawCommandListRendererPixelBased))]
-public class DrawCommanderPixelBasedEditor : DrawCommanderEditor
+namespace EyE.Editor.Graphics
 {
-    SerializedProperty textureSizeProp;
-    override protected void OnEnable()
+    [CustomEditor(typeof(DrawCommandListRendererPixelBased))]
+    public class DrawCommanderPixelBasedEditor : DrawCommanderEditor
     {
-        base.OnEnable();
-        textureSizeProp = serializedObject.FindProperty("textureSize");
+        SerializedProperty textureSizeProp;
+        override protected void OnEnable()
+        {
+            base.OnEnable();
+            textureSizeProp = serializedObject.FindProperty("textureSize");
+        }
+        protected override void DrawPreListProperties()
+        {
+            EditorGUILayout.PropertyField(textureSizeProp);
+        }
+        protected override Vector2Int TexSize => ((DrawCommandListRendererPixelBased)target).textureSize;
     }
-    protected override void DrawPreListProperties()
-    {
-        EditorGUILayout.PropertyField(textureSizeProp);
-    }
-    protected override Vector2Int TexSize => ((DrawCommandListRendererPixelBased)target).textureSize;
 }

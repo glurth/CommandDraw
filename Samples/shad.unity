@@ -228,15 +228,14 @@ GameObject:
   - component: {fileID: 1048725819}
   - component: {fileID: 1048725818}
   - component: {fileID: 1048725817}
-  - component: {fileID: 1048725816}
   - component: {fileID: 1048725815}
   m_Layer: 0
-  m_Name: Quad Draw Commander Pixel Specific (1)
+  m_Name: Quad Draw Commander Pixel Specific
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1048725815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,102 +248,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca1b5d7bb48b1042babc63ce8a2ef04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawCommands:
-  - rid: 7911318299113160717
-  - rid: 7911318299113160718
-  - rid: 7911318299113160720
-  - rid: 7911318299113160721
-  - rid: 7911318299113160722
-  - rid: 7911318299113160723
-  - rid: 7911318299113160726
+  drawCommands: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 0}
   antiAliasingScalar: 1
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 672629e9cd56cbf49a6ec87b3ca23183, type: 2}
   textureSize: {x: 1000, y: 1000}
   references:
     version: 2
-    RefIds:
-    - rid: 7911318299113160717
-      type: {class: CircleDrawCommand, ns: , asm: Assembly-CSharp}
-      data:
-        center: {x: 500, y: 500}
-        radius: 200
-        color: {r: 0.17080526, g: 0.6415094, b: 0.14222142, a: 0.53333336}
-        thickness: 10
-    - rid: 7911318299113160718
-      type: {class: RadialLine, ns: , asm: Assembly-CSharp}
-      data:
-        center: {x: 500, y: 500}
-        startEndRadialFraction: {x: 0.8, y: 1.1}
-        radius: 200
-        angleInTurns: 0
-        color: {r: 0.17254902, g: 0.6431373, b: 0.14117648, a: 0.4627451}
-        thickness: 5
-    - rid: 7911318299113160720
-      type: {class: RadialLine, ns: , asm: Assembly-CSharp}
-      data:
-        center: {x: 500, y: 500}
-        startEndRadialFraction: {x: 0.8, y: 1.1}
-        radius: 200
-        angleInTurns: 0.25
-        color: {r: 0.17254902, g: 0.6431373, b: 0.14117648, a: 0.5254902}
-        thickness: 5
-    - rid: 7911318299113160721
-      type: {class: RadialLine, ns: , asm: Assembly-CSharp}
-      data:
-        center: {x: 500, y: 500}
-        startEndRadialFraction: {x: 0.8, y: 1.1}
-        radius: 200
-        angleInTurns: 0.5
-        color: {r: 0.17254902, g: 0.6431373, b: 0.14117648, a: 0.5254902}
-        thickness: 5
-    - rid: 7911318299113160722
-      type: {class: RadialLine, ns: , asm: Assembly-CSharp}
-      data:
-        center: {x: 500, y: 500}
-        startEndRadialFraction: {x: 0.8, y: 1.1}
-        radius: 200
-        angleInTurns: 0.75
-        color: {r: 0.17254902, g: 0.6431373, b: 0.14117648, a: 0.4745098}
-        thickness: 5
-    - rid: 7911318299113160723
-      type: {class: ArcDrawCommand, ns: , asm: Assembly-CSharp}
-      data:
-        center: {x: 500, y: 500}
-        startAngleInTurns: 0.125
-        endAngleInTurns: 0.625
-        radius: 170
-        color: {r: 0.17254902, g: 0.6431373, b: 0.14117648, a: 0.49803922}
-        thickness: 5
-    - rid: 7911318299113160726
-      type: {class: CircleDrawCommand, ns: , asm: Assembly-CSharp}
-      data:
-        center: {x: 500, y: 500}
-        radius: 50.01
-        color: {r: 1, g: 1, b: 0, a: 0.54509807}
-        thickness: 5
---- !u!64 &1048725816
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048725814}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+    RefIds: []
 --- !u!23 &1048725817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -495,7 +406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853025493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -513,7 +424,6 @@ GameObject:
   - component: {fileID: 1918216793}
   - component: {fileID: 1918216792}
   - component: {fileID: 1918216791}
-  - component: {fileID: 1918216790}
   - component: {fileID: 1918216789}
   m_Layer: 0
   m_Name: Quad Quad Draw Commander UV based
@@ -535,71 +445,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawCommands:
-  - rid: 6907199768876023810
-  - rid: 6907199768876023808
-  - rid: 6907199768876023811
-  - rid: 6907199775355174913
+  - rid: 7911318324119863299
+  - rid: 7911318324119863300
+  - rid: 7911318324119863301
+  - rid: 7911318324119863302
   backgroundColor: {r: 1, g: 1, b: 1, a: 0}
-  antiAliasingScalar: 1.83
+  antiAliasingScalar: 1.5
   textureBasedDisplayMaterial: {fileID: 2100000, guid: db817c6d45095bd42b5632048d331c85, type: 2}
   references:
     version: 2
     RefIds:
-    - rid: 6907199768876023808
-      type: {class: LineDrawCommand, ns: , asm: Assembly-CSharp}
-      data:
-        start: {x: 0, y: 0}
-        end: {x: 0.45, y: 1}
-        thickness: 0.1
-        color: {r: 0, g: 0, b: 0, a: 1}
-    - rid: 6907199768876023810
-      type: {class: CurveDrawCommand, ns: , asm: Assembly-CSharp}
-      data:
-        p0: {x: 0.5, y: 0.1}
-        p1: {x: 0.5, y: 0.5}
-        p2: {x: 0.1, y: 0.6}
-        color: {r: 0.14117645, g: 0.17372464, b: 0.65882355, a: 0.70980394}
-        thickness: 0.1
-    - rid: 6907199768876023811
-      type: {class: PolyLineDrawCommand, ns: , asm: Assembly-CSharp}
-      data:
-        positions:
-        - {x: 0.1, y: 0.1}
-        - {x: 0.1, y: 0.5}
-        - {x: 0.5, y: 0.5}
-        - {x: 0.5, y: 0.1}
-        - {x: 0.1, y: 0.1}
-        color: {r: 1, g: 0, b: 0.8089566, a: 1}
-        thickness: 0.05
-    - rid: 6907199775355174913
-      type: {class: CircleDrawCommand, ns: , asm: Assembly-CSharp}
+    - rid: 7911318324119863299
+      type: {class: CircleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
       data:
         center: {x: 0.5, y: 0.5}
-        radius: 0.3
-        color: {r: 0.3490566, g: 0.31118727, b: 0.31118727, a: 1}
-        thickness: 0.02
---- !u!64 &1918216790
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918216788}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+        radius: 0.25
+        color: {r: 0.16316223, g: 1, b: 0, a: 0.64705884}
+        thickness: 0.01
+    - rid: 7911318324119863300
+      type: {class: PolarRadialLineArray, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        prototype:
+          center: {x: 0.5, y: 0.5}
+          startEndRadialFraction: {x: 0.8, y: 1}
+          radius: 0.25
+          angleInTurns: 0.25
+          color: {r: 0.18905589, g: 0.764151, b: 0.09732112, a: 0.6039216}
+          thickness: 0.01
+        angleStepTurns: 0.3333
+        count: 3
+    - rid: 7911318324119863301
+      type: {class: TriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        a: {x: 0.45, y: 0.45}
+        b: {x: 0.5, y: 0.55}
+        c: {x: 0.55, y: 0.45}
+        color: {r: 0.8584906, g: 0.82044905, b: 0.07694017, a: 0.57254905}
+    - rid: 7911318324119863302
+      type: {class: PolarAngleSpanRadialLineArray, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        prototype:
+          center: {x: 0.5, y: 0.5}
+          startEndRadialFraction: {x: 0.8, y: 0.9}
+          radius: 0.25
+          angleInTurns: 0
+          color: {r: 0.7735849, g: 0.12771447, b: 0.12771447, a: 0.6313726}
+          thickness: 0.005
+        totalAngleSpanTurns: 1
+        count: 12
 --- !u!23 &1918216791
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -658,8 +551,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918216788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.74, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

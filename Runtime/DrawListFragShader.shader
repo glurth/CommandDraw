@@ -30,6 +30,13 @@ Shader "Unlit/DrawListFragShader"
             static const int CMD_RRECT = 5; // rounded filled rect
             static const int CMD_CAPSULE = 6;
             static const int CMD_TRIANGLE = 7;
+            // ------------------------------------------------------------------
+            // Blend Mode Constants
+            // ------------------------------------------------------------------
+            static const int BLEND_NORMAL = 0;
+            static const int BLEND_ADDITIVE = 1;
+            static const int BLEND_MULTIPLY = 2;
+
 
             // ------------------------------------------------------------------
             // Unified DrawCommand - every field documented per command
@@ -136,7 +143,7 @@ Shader "Unlit/DrawListFragShader"
 
             float dist_Disk(float2 p, float2 center, float r)
             {
-                return max(0,length(p - center) - r);
+                return length(p - center) - r;
             }
 
             float dist_Rect(float2 p, float2 c, float2 half)
@@ -217,9 +224,43 @@ Shader "Unlit/DrawListFragShader"
                 }
             }
 
+
+            // ------------------------------------------------------------------
+            // Blend functions
+            // ------------------------------------------------------------------
+
+            float4 BlendNormal(float4 dst, float4 src, float alpha)
+            {
+                float finalAlpha = src.a * alpha;
+                float3 srcRGB = src.rgb * finalAlpha;
+                float srcA = finalAlpha;
+                float3 outRGB = srcRGB + dst.rgb * (1.0 - srcA);
+                float outA = srcA + dst.a * (1.0 - srcA);
+                return float4(outRGB, outA);
+            }
+
+            float4 BlendAdditive(float4 dst, float4 src, float alpha)
+            {
+                float finalAlpha = src.a * alpha;
+                return dst + src * finalAlpha;
+            }
+
+            float4 BlendMultiply(float4 dst, float4 src, float alpha)
+            {
+                float finalAlpha = src.a * alpha;
+                return dst * (1.0 - finalAlpha) + src * finalAlpha;
+            }
+
             // ------------------------------------------------------------------
             // Draw loop
             // ------------------------------------------------------------------
+
+            // cmdInt contains both shape type (lower 4 bits) and blend mode (upper 4 bits)
+            void UnpackCommandType(int cmdInt, out int shapeType, out int blendMode)
+            {
+                shapeType = cmdInt & 0xF;         // lower 4 bits
+                blendMode = (cmdInt >> 4) & 0xF; // next 4 bits
+            }
             float4 DrawCommands(float2 uv)
             {
                 float4 outColor = float4(_BackgroundColor.rgb * _BackgroundColor.a, _BackgroundColor.a);
@@ -238,34 +279,37 @@ Shader "Unlit/DrawListFragShader"
                     DrawCommand cmd = _Commands[i];
                     float d = 0.0;
                     float halfT = cmd.thickness * 0.5;
-                    int ct = cmd.commandType;
 
-                    if (ct == CMD_LINE)
+                    int shapeType;// = cmd.commandType;
+                    int blendMode;
+                    UnpackCommandType(cmd.commandType, shapeType, blendMode);
+
+                    if (shapeType == CMD_LINE)
                     {
                         d = dist_Line(uv, cmd.positionA, cmd.positionB);
                     }
-                    else if (ct == CMD_ARC)
+                    else if (shapeType == CMD_ARC)
                     {
                         // start/end angles packed into positionB.x/y
                         d = dist_Arc(uv, cmd.positionA, cmd.scalarA, cmd.positionB.x, cmd.positionB.y);
                     }
-                    else if (ct == CMD_DISK)
+                    else if (shapeType == CMD_DISK)
                     {
                         d = dist_Disk(uv, cmd.positionA, cmd.scalarA);
                     }
-                    else if (ct == CMD_RECT)
+                    else if (shapeType == CMD_RECT)
                     {
                         d = dist_Rect(uv, cmd.positionA, cmd.positionB);
                     }
-                    else if (ct == CMD_ORECT)
+                    else if (shapeType == CMD_ORECT)
                     {
                         d = dist_OrientedRect(uv, cmd.positionA, cmd.positionB, cmd.scalarA);
                     }
-                    else if (ct == CMD_RRECT)
+                    else if (shapeType == CMD_RRECT)
                     {
                         d = dist_RoundedRect(uv, cmd.positionA, cmd.positionB, cmd.positionC);
                     }
-                    else if (ct == CMD_CAPSULE)
+                    else if (shapeType == CMD_CAPSULE)
                     {
                         d = dist_Capsule(uv, cmd.positionA, cmd.positionB, cmd.scalarA);
                     }
@@ -294,7 +338,7 @@ Shader "Unlit/DrawListFragShader"
                     {
                         float alpha;
                         alpha = smoothstep(pxAA, 0, minD);
-                        float finalAlpha = cmd.color.a * alpha;
+                        /*float finalAlpha = cmd.color.a * alpha;
 
                         // premultiplied stroke
                         float3 srcRGB = cmd.color.rgb * finalAlpha;
@@ -303,6 +347,14 @@ Shader "Unlit/DrawListFragShader"
                         // premultiplied over existing outColor
                         outColor.rgb = srcRGB + outColor.rgb * (1.0 - srcA);
                         outColor.a = srcA + outColor.a * (1.0 - srcA);
+                        */
+                        if (blendMode == BLEND_NORMAL)
+                            outColor = BlendNormal(outColor, cmd.color, alpha);
+                        else if (blendMode == BLEND_ADDITIVE)
+                            outColor = BlendAdditive(outColor, cmd.color, alpha);
+                        else if (blendMode == BLEND_MULTIPLY)
+                            outColor = BlendMultiply(outColor, cmd.color, alpha);
+
                         minD = 1e20;
                     }
 
