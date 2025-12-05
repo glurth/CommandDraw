@@ -104,17 +104,19 @@ where $\text{pxAA}$ is the screen-space anti-aliasing kernel size derived from $
 
 ---
 
-## 🤝 Contributions
+## ✒ Contributions
 
-Contributions, issues, and feature requests are welcome and encouraged! Please submit them directly through the project's GitHub repository.  Note: due to licensing stuff, your explicit written permission must be granted before contributions can be included.
+Contributions, issues, and feature requests are welcome! Please submit them via the GitHub repository. Note: Due to licensing, contributions can only be included with explicit written permission from the copyright holder.
 
 ---
 
 
-## Licensing
+## ⚖ Licensing
 
 This package is licensed under the EyE Dual-Licensing Agreement.
 
-This model provides free, perpetual use for Indie Developers and non-commercial projects (teams with annual revenue under $100,000 USD). Larger organizations or established game studios are required to purchase a Perpetual Commercial License (PCL) for each named commercial project.
+It provides free, perpetual use for indie developers and non-commercial projects whose teams had Total Gross Receipts under $100,000 USD in the previous fiscal year.
 
-Please review the full terms and conditions in the file [license.md] before commercial use.
+Organizations exceeding this threshold must obtain a Perpetual Commercial License (PCL) for each named commercial project.
+
+Please review the full terms in [LICENSE.md] before commercial use.

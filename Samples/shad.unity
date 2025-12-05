@@ -217,6 +217,187 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &847959039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847959044}
+  - component: {fileID: 847959043}
+  - component: {fileID: 847959042}
+  - component: {fileID: 847959041}
+  - component: {fileID: 847959040}
+  m_Layer: 0
+  m_Name: Clock Draw Commander
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &847959040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847959039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0756099d4fc5ca844a857c9cef100f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendererRef: {fileID: 847959041}
+--- !u!114 &847959041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847959039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fbe7751f7dbf149b381330cedc2cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawCommands:
+  - rid: 7911318327969448666
+  - rid: 7911318327969448667
+  - rid: 7911318327969448668
+  - rid: 7911318327969448669
+  - rid: 7911318327969448670
+  - rid: 7911318327969448671
+  backgroundColor: {r: 1, g: 1, b: 1, a: 0}
+  antiAliasingScalar: 1.5
+  textureBasedDisplayMaterial: {fileID: 2100000, guid: db817c6d45095bd42b5632048d331c85, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7911318327969448666
+      type: {class: CircleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        radius: 0.48
+        color: {r: 1, g: 1, b: 1, a: 1}
+        thickness: 0.015
+    - rid: 7911318327969448667
+      type: {class: PolarAngleSpanRadialLineArray, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        prototype:
+          center: {x: 0.5, y: 0.5}
+          startEndRadialFraction: {x: 0.8, y: 1}
+          radius: 0.48
+          angleInTurns: 0
+          color: {r: 0, g: 0, b: 0, a: 1}
+          thickness: 0.015
+        totalAngleSpanTurns: 1
+        count: 12
+    - rid: 7911318327969448668
+      type: {class: PolarAngleSpanRadialLineArray, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        prototype:
+          center: {x: 0.5, y: 0.5}
+          startEndRadialFraction: {x: 0.9, y: 1}
+          radius: 0.48
+          angleInTurns: 0
+          color: {r: 0, g: 0, b: 0, a: 0.5}
+          thickness: 0.006
+        totalAngleSpanTurns: 1
+        count: 60
+    - rid: 7911318327969448669
+      type: {class: RadialLine, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 0.45}
+        radius: 0.48
+        angleInTurns: -0.24444446
+        color: {r: 0, g: 0, b: 0, a: 1}
+        thickness: 0.03
+    - rid: 7911318327969448670
+      type: {class: RadialLine, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 0.6}
+        radius: 0.48
+        angleInTurns: -0.6866667
+        color: {r: 0, g: 0, b: 0, a: 1}
+        thickness: 0.02
+    - rid: 7911318327969448671
+      type: {class: RadialLine, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 0.7}
+        radius: 0.48
+        angleInTurns: 0.035983324
+        color: {r: 1, g: 0, b: 0, a: 1}
+        thickness: 0.01
+--- !u!23 &847959042
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847959039}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: db817c6d45095bd42b5632048d331c85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &847959043
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847959039}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &847959044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847959039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5, y: 0, z: -4}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048725814
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +501,476 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1309073548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309073553}
+  - component: {fileID: 1309073552}
+  - component: {fileID: 1309073551}
+  - component: {fileID: 1309073550}
+  - component: {fileID: 1309073549}
+  m_Layer: 0
+  m_Name: GF Clock Draw Commander
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1309073549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309073548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcfdec61aa40764fa903038e34d4c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendererRef: {fileID: 1309073550}
+--- !u!114 &1309073550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309073548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fbe7751f7dbf149b381330cedc2cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawCommands:
+  - rid: 7911318327969448638
+  - rid: 7911318327969448639
+  - rid: 7911318327969448640
+  - rid: 7911318327969448641
+  - rid: 7911318327969448642
+  - rid: 7911318327969448643
+  - rid: 7911318327969448644
+  - rid: 7911318327969448645
+  - rid: 7911318327969448646
+  - rid: 7911318327969448647
+  - rid: 7911318327969448648
+  - rid: 7911318327969448649
+  - rid: 7911318327969448650
+  - rid: 7911318327969448651
+  - rid: 7911318327969448652
+  - rid: 7911318327969448653
+  - rid: 7911318327969448654
+  - rid: 7911318327969448655
+  - rid: 7911318327969448656
+  backgroundColor: {r: 1, g: 1, b: 1, a: 0}
+  antiAliasingScalar: 1.5
+  textureBasedDisplayMaterial: {fileID: 2100000, guid: 91e55b95bfb0da643994602b42210b1e, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7911318327969448638
+      type: {class: CircleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        radius: 0.47
+        color: {r: 0.15, g: 0.08, b: 0.02, a: 1}
+        thickness: 0.05
+    - rid: 7911318327969448639
+      type: {class: CircleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        radius: 0.4
+        color: {r: 0.9, g: 0.85, b: 0.7, a: 1}
+        thickness: 0.015
+    - rid: 7911318327969448640
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.83000004, y: 0.5}
+        size: 0.03
+        angle: 1.5707964
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448641
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.7857884, y: 0.665}
+        size: 0.03
+        angle: 2.0943952
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448642
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.665, y: 0.7857884}
+        size: 0.03
+        angle: 2.6179938
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448643
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.83000004}
+        size: 0.03
+        angle: 3.1415927
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448644
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.33499998, y: 0.7857884}
+        size: 0.03
+        angle: 3.6651917
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448645
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.21421161, y: 0.665}
+        size: 0.03
+        angle: 4.1887903
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448646
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.16999999, y: 0.49999997}
+        size: 0.03
+        angle: 4.712389
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448647
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.21421164, y: 0.33499995}
+        size: 0.03
+        angle: 5.235988
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448648
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.335, y: 0.2142116}
+        size: 0.03
+        angle: 5.759587
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448649
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.16999999}
+        size: 0.03
+        angle: 6.2831855
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448650
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.66499996, y: 0.2142116}
+        size: 0.03
+        angle: 6.806784
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448651
+      type: {class: EquiTriangleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.7857885, y: 0.33500007}
+        size: 0.03
+        angle: 7.3303833
+        color: {r: 0.1, g: 0.08, b: 0.05, a: 1}
+    - rid: 7911318327969448652
+      type: {class: RadialLine, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 0.45}
+        radius: 0.4
+        angleInTurns: -0.24444446
+        color: {r: 0, g: 0, b: 0, a: 1}
+        thickness: 0.03
+    - rid: 7911318327969448653
+      type: {class: RadialLine, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 0.6}
+        radius: 0.4
+        angleInTurns: -0.6866667
+        color: {r: 0, g: 0, b: 0, a: 1}
+        thickness: 0.02
+    - rid: 7911318327969448654
+      type: {class: RadialLine, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 0.7}
+        radius: 0.4
+        angleInTurns: 0.035983324
+        color: {r: 0.7, g: 0.1, b: 0.1, a: 1}
+        thickness: 0.01
+    - rid: 7911318327969448655
+      type: {class: CapsuleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        endpointA: {x: 0.5, y: 0.45}
+        endpointB: {x: 0.5649302, y: 0.099999994}
+        radius: 0.006
+        color: {r: 0.8, g: 0.65, b: 0.4, a: 1}
+    - rid: 7911318327969448656
+      type: {class: DiskDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5649302, y: 0.099999994}
+        radius: 0.05
+        color: {r: 0.9, g: 0.75, b: 0.45, a: 1}
+--- !u!23 &1309073551
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309073548}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 91e55b95bfb0da643994602b42210b1e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1309073552
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309073548}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1309073553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309073548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 0, z: -4}
+  m_LocalScale: {x: 2, y: 2, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1329444931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329444936}
+  - component: {fileID: 1329444935}
+  - component: {fileID: 1329444934}
+  - component: {fileID: 1329444933}
+  - component: {fileID: 1329444932}
+  m_Layer: 0
+  m_Name: Swiss Clock Draw Commander
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1329444932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329444931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd783044d0666a49a30e32a9aad7b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendererRef: {fileID: 1329444933}
+--- !u!114 &1329444933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329444931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fbe7751f7dbf149b381330cedc2cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawCommands:
+  - rid: 7911318327969448657
+  - rid: 7911318327969448658
+  - rid: 7911318327969448659
+  - rid: 7911318327969448660
+  - rid: 7911318327969448661
+  - rid: 7911318327969448662
+  - rid: 7911318327969448663
+  - rid: 7911318327969448664
+  - rid: 7911318327969448665
+  backgroundColor: {r: 1, g: 1, b: 1, a: 0}
+  antiAliasingScalar: 1.5
+  textureBasedDisplayMaterial: {fileID: 2100000, guid: 672629e9cd56cbf49a6ec87b3ca23183, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7911318327969448657
+      type: {class: DiskDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        radius: 0.48
+        color: {r: 0.98, g: 0.98, b: 0.98, a: 1}
+    - rid: 7911318327969448658
+      type: {class: CircleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        radius: 0.48
+        color: {r: 0.85, g: 0.85, b: 0.9, a: 1}
+        thickness: 0.03
+    - rid: 7911318327969448659
+      type: {class: PolarAngleSpanRadialLineArray, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        prototype:
+          center: {x: 0.5, y: 0.5}
+          startEndRadialFraction: {x: 0.74, y: 0.98}
+          radius: 0.48
+          angleInTurns: 0
+          color: {r: 0, g: 0, b: 0, a: 1}
+          thickness: 0.018
+        totalAngleSpanTurns: 1
+        count: 12
+    - rid: 7911318327969448660
+      type: {class: PolarAngleSpanRadialLineArray, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        prototype:
+          center: {x: 0.5, y: 0.5}
+          startEndRadialFraction: {x: 0.88, y: 0.98}
+          radius: 0.48
+          angleInTurns: 0
+          color: {r: 0, g: 0, b: 0, a: 0.55}
+          thickness: 0.007
+        totalAngleSpanTurns: 1
+        count: 60
+    - rid: 7911318327969448661
+      type: {class: CapsuleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        endpointA: {x: 0.5, y: 0.5}
+        endpointB: {x: 0.5097718, y: 0.22017056}
+        radius: 0.018
+        color: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 7911318327969448662
+      type: {class: CapsuleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        endpointA: {x: 0.5, y: 0.5}
+        endpointB: {x: 0.3527443, y: 0.85030806}
+        radius: 0.012
+        color: {r: 0, g: 0, b: 0, a: 1}
+    - rid: 7911318327969448663
+      type: {class: CapsuleDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        endpointA: {x: 0.28559893, y: 0.4506829}
+        endpointB: {x: 0.92880213, y: 0.5986342}
+        radius: 0.006
+        color: {r: 1, g: 0, b: 0, a: 1}
+    - rid: 7911318327969448664
+      type: {class: DiskDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.28559893, y: 0.4506829}
+        radius: 0.02
+        color: {r: 1, g: 0, b: 0, a: 1}
+    - rid: 7911318327969448665
+      type: {class: DiskDrawCommand, ns: EyE.Graphics, asm: Assembly-CSharp}
+      data:
+        center: {x: 0.5, y: 0.5}
+        radius: 0.025
+        color: {r: 0.05, g: 0.05, b: 0.05, a: 1}
+--- !u!23 &1329444934
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329444931}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 672629e9cd56cbf49a6ec87b3ca23183, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1329444935
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329444931}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1329444936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329444931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403372773
 GameObject:
@@ -433,7 +1084,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.04614632, g: 0.054611087, b: 0.16037738, a: 0}
+  m_BackGroundColor: {r: 0.57271266, g: 0.58396345, b: 0.735849, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -507,7 +1158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1918216789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,7 +1371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2116472199
 MonoBehaviour:
   m_ObjectHideFlags: 0

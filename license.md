@@ -1,45 +1,83 @@
-﻿## EyE Dual-Licensing Agreement
+﻿# EyE Dual-License Agreement for CommandDraw
+Copyright (c) 2025 Glurth. All rights reserved.
 
-### Dual-Licensing Agreement
-
-This license governs the use and distribution of the **CommandDraw** software package (the "Software"). The Software is offered under two distinct tracks: **The Permissive Indie License (Free)** and **The Perpetual Commercial License (Paid)**.
-
----
-
-### Track 1: The Permissive Indie License (Free)
-
-This license allows for FREE and Royalty-Free use of **CommandDraw**, provided your organization does not meet the mandatory criteria for the Perpetual Commercial License below.
-
-#### 1. Permitted Uses (Free)
-The Software may be used for any commercial or non-commercial purpose by:
-* **Indie Developers and Small Teams:** Individuals, small teams, or organizations with an annual gross revenue of **less than $100,000 USD** in the previous fiscal year.
-* **Students and Education:** Any use for educational, academic, and personal learning projects.
-* **Non-Profit Use:** Any use by registered non-profit organizations.
-
-#### 2. Conditions of the Indie License
-* **Attribution:** You must retain all copyright notices and this license text in any copies or substantial portions of the Software.
-* **Perpetual Grant:** This license is perpetual, revocable only upon breach of these terms.
+This copyright applies to the **CommandDraw** software package (the "Software"), including all source code, assets, and documentation.  
+The terms below govern its use and distribution. Use of the Software constitutes acceptance of these terms.
 
 ---
 
-### Track 2: The Perpetual Commercial License (Mandatory Paid Fee)
+## TRACK 1 — PERMISSIVE INDIE LICENSE (FREE)
 
-A separate Perpetual Commercial License (PCL) MUST be obtained in writing from the copyright holder (Glurth) if the user, or the organization the user represents, meets **EITHER** of the following criteria:
+### 1. Grant of Rights
+If you qualify under Section 2 below, you are granted a **perpetual, worldwide, non-exclusive, royalty-free** license to:
+- Use the Software in commercial or non-commercial projects.
+- Modify the Software.
+- Create derivative works.
+- Include the Software in compiled projects, games, or apps.
+- Share the Software with team members working on the same project.
 
-* The organization's annual gross revenue was **$100,000 USD or more** in the previous fiscal year.
-* The organization's primary business activity is the creation, publishing, or distribution of games (e.g., a game studio, publisher, or platform) **regardless of revenue.**
+### 2. Eligibility (You must meet ALL conditions)
+You may use the Indie License only if:
+- Your organization’s **Total Gross Receipts** in the previous fiscal year were **less than $100,000 USD**, and  
+- You are not using the Software under contract for or on behalf of an organization whose Total Gross Receipts meet or exceed the above threshold.
 
-#### 3. Perpetual Commercial License Terms
-* **Fee Structure:** The PCL grants the organization the right to use the Software in **one named commercial project** indefinitely upon payment of a **single, one-time license fee** (the amount and terms of which are negotiated with the copyright holder).
-* **Scope:** The PCL is granted per commercial project and is not a subscription.
+**Definition:**  
+**Total Gross Receipts** means all money received by the organization from any source, including revenue, sales, investments, loans, grants, crowdfunding, and capital injections.
+
+### 3. Restrictions (Indie License)
+- You may **not** redistribute the Software as a standalone product or library.  
+- You must retain all copyright notices in source distributions.
 
 ---
 
-### General Terms (Applies to All Users)
+## TRACK 2 — PERPETUAL COMMERCIAL LICENSE (PCL) — REQUIRED FOR LARGE ORGANIZATIONS
 
-#### 4. Disclaimer
-THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE AUTHOR (GLURTH) IS NOT LIABLE FOR ANY DAMAGES ARISING FROM THE USE OF THE SOFTWARE.
+If you do **not** qualify for the Indie License, you MUST obtain a Perpetual Commercial License.
 
-#### 5. Contact
-For commercial licensing inquiries, purchase of a Perpetual Commercial License, or written permission, please contact:
-**Glurth at gmail dot com**
+### 4. Eligibility Trigger
+- Organizations with Total Gross Receipts of **$100,000 USD or more** in the previous fiscal year, or  
+- Contractors developing work for such organizations.
+
+### 5. Grant of Rights (Commercial License)
+Upon purchase of a PCL, the organization receives:
+- A perpetual, worldwide, non-exclusive license to use the Software in **one named commercial project**.
+- The right to modify, integrate, and distribute the Software as part of that project.
+- No royalties or subscription fees.
+
+Each additional commercial project requires a separate PCL.
+
+### 6. Transferability
+A PCL is:
+- Transferable only in the event of full project acquisition.
+- Not transferable between unrelated projects, teams, or subsidiaries.
+
+---
+
+## GENERAL TERMS (APPLICABLE TO ALL USERS)
+
+### 7. No Warranty
+THE SOFTWARE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+### 8. Limitation of Liability
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, INCLUDING BUT NOT LIMITED TO INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES.
+
+### 9. Termination
+This license terminates automatically if:
+- You breach any term of the applicable license track.
+- You attempt to circumvent the license or misrepresent eligibility.
+
+Upon termination:
+- All rights granted under this license cease.
+- You must remove the Software from all active development environments.
+- Shipping binaries already released to customers may remain distributed.
+
+### 10. Governing Law
+This Agreement is governed by the laws of the **United States**, and disputes shall be heard in the courts of **Colorado** unless otherwise required by applicable law.
+
+### 11. Contact
+For commercial licensing or questions:  
+**glurth at gmail dot com**
+
+---
+
+## END OF LICENSE

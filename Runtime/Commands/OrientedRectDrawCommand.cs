@@ -15,7 +15,7 @@ namespace EyE.Graphics
         public Vector2 halfSize;
 
         /// <summary>Rotation angle in radians. Maps to <see cref="PackedDrawCommand.radius"/>.</summary>
-        public float rotationRadians;
+        public float rotationTurns;
 
         /// <summary>Fill color. Maps to <see cref="PackedDrawCommand.color"/>.</summary>
         public Color color;
@@ -28,7 +28,7 @@ namespace EyE.Graphics
         {
             center = new Vector2(0.25f, 0.5f);
             halfSize = new Vector2(0.5f, 0.5f);
-            rotationRadians = Mathf.PI / 2;
+            rotationTurns = 1;// Mathf.PI / 2;
             color = Color.black;
 
             if (pixelSize.x > 1 || pixelSize.y > 1)
@@ -43,16 +43,16 @@ namespace EyE.Graphics
         {
             center = new Vector2(0.25f, 0.5f);
             halfSize = new Vector2(0.5f, 0.5f);
-            rotationRadians = Mathf.PI / 2;
+            rotationTurns = 1;// Mathf.PI / 2;
             color = Color.black;
         }
 
         /// <summary>Constructs an oriented rectangle with specified center, halfSize, rotation, and color.</summary>
-        public OrientedRectDrawCommand(Vector2 center, Vector2 halfSize, float rotationRadians, Color color)
+        public OrientedRectDrawCommand(Vector2 center, Vector2 halfSize, float rotationTurns, Color color)
         {
             this.center = center;
             this.halfSize = halfSize;
-            this.rotationRadians = rotationRadians;
+            this.rotationTurns = rotationTurns;
             this.color = color;
         }
 
@@ -75,7 +75,7 @@ namespace EyE.Graphics
                 halfSize,
                 Vector2.zero,
                 color,
-                rotationRadians,
+                rotationTurns * Mathf.PI*2f,
                 0.0f,
                 objID
             );
