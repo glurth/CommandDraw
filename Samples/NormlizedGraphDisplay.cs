@@ -43,7 +43,7 @@ public sealed class NormalizedGraph<T> where T : struct, IConvertible
         }
         float oneOveRange = 1f / range;
         float invCountMinusOne = 1f / (count - 1);
-
+        oneOveRange -= thickness;
         for (int i = 0; i < count - 1; i++)
         {
             float x0 = i * invCountMinusOne;
@@ -51,6 +51,8 @@ public sealed class NormalizedGraph<T> where T : struct, IConvertible
 
             float y0 = (values[i] - min) * oneOveRange;
             float y1 = (values[i + 1] - min) * oneOveRange;
+            y0 += thickness;
+            y1 += thickness;
 
             lines.Add(new LineDrawCommand(new Vector2(x0, y0), new Vector2(x1, y1), thickness, color));
         }

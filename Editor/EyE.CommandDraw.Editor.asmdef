@@ -1,0 +1,18 @@
+{
+    "name": "EyE.CommandDraw.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4d8bd061953423742b1dc54d5376c39a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
