@@ -104,7 +104,8 @@ Shader "Unlit/DrawListFragShader"
                 return length(pa - ba * h);
             }
 
-            float dist_Arc(float2 p, float2 center, float innerRadius, float outerRadius, float startAngle, float endAngle)
+            //float dist_Arc(float2 p, float2 center, float innerRadius, float outerRadius, float startAngle, float endAngle)
+            float dist_Arc(float2 p, float2 center, float radius, float startAngle, float endAngle)
             {
                 float2 d = p - center;
                 float ang = atan2(d.y, d.x);
@@ -116,10 +117,11 @@ Shader "Unlit/DrawListFragShader"
                 if (e < 0.0) e += 6.28318530718;
 
                 float pRadius = length(d);
+
                 float radial=0;
-                if (pRadius < innerRadius) radial = innerRadius - pRadius;
-                else if (pRadius > outerRadius)radial = pRadius - outerRadius;
-                
+               // if (pRadius < innerRadius) radial = 1;// innerRadius - pRadius;
+               // else if (pRadius > outerRadius)radial = 1;// pRadius - outerRadius;
+                radial = abs(radius - pRadius);
 
 
                 bool insideSpan = false;
@@ -139,12 +141,6 @@ Shader "Unlit/DrawListFragShader"
                 else
                 {
                     return 1;
-                    /*float midRadius = (innerRadius + outerRadius) / 2.0;
-                    float2 e0 = center + midRadius * float2(cos(s), sin(s));
-                    float2 e1 = center + midRadius * float2(cos(e), sin(e));
-                    float d0 = length(p - e0);
-                    float d1 = length(p - e1);
-                    return min(d0, d1);*/
                 }
             }
 
@@ -298,7 +294,8 @@ Shader "Unlit/DrawListFragShader"
                     else if (shapeType == CMD_ARC)
                     {
                         // start/end angles packed into positionB.x/y
-                        d = dist_Arc(uv, cmd.positionA, cmd.scalarA-halfT, cmd.scalarA + halfT, cmd.positionB.x, cmd.positionB.y);
+                        //d = dist_Arc(uv, cmd.positionA, cmd.scalarA - halfT, cmd.scalarA + halfT, cmd.positionB.x, cmd.positionB.y);
+                        d = dist_Arc(uv, cmd.positionA, cmd.scalarA , cmd.positionB.x, cmd.positionB.y);
                     }
                     else if (shapeType == CMD_DISK)
                     {

@@ -170,406 +170,406 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawCommands:
-  - rid: 7911318741399372177
-  - rid: 7911318741399372178
-  - rid: 7911318741399372179
-  - rid: 7911318741399372180
-  - rid: 7911318741399372181
-  - rid: 7911318741399372182
-  - rid: 7911318741399372183
-  - rid: 7911318741399372184
-  - rid: 7911318741399372185
-  - rid: 7911318741399372186
-  - rid: 7911318741399372187
-  - rid: 7911318741399372188
-  - rid: 7911318741399372189
-  - rid: 7911318741399372190
-  - rid: 7911318741399372191
-  - rid: 7911318741399372192
-  - rid: 7911318741399372193
-  - rid: 7911318741399372194
-  - rid: 7911318741399372195
-  - rid: 7911318741399372196
-  - rid: 7911318741399372197
-  - rid: 7911318741399372198
-  - rid: 7911318741399372199
-  - rid: 7911318741399372200
-  - rid: 7911318741399372201
-  - rid: 7911318741399372202
-  - rid: 7911318741399372203
-  - rid: 7911318741399372204
-  - rid: 7911318741399372205
-  - rid: 7911318741399372206
-  - rid: 7911318741399372207
-  - rid: 7911318741399372208
-  - rid: 7911318741399372209
-  - rid: 7911318741399372210
-  - rid: 7911318741399372211
-  - rid: 7911318741399372212
-  - rid: 7911318741399372213
-  - rid: 7911318741399372214
-  - rid: 7911318741399372215
-  - rid: 7911318741399372216
-  - rid: 7911318741399372217
-  - rid: 7911318741399372218
-  - rid: 7911318741399372219
-  - rid: 7911318741399372220
-  - rid: 7911318741399372221
-  - rid: 7911318741399372222
-  - rid: 7911318741399372223
-  - rid: 7911318741399372224
-  - rid: 7911318741399372225
-  - rid: 7911318741399372226
+  - rid: 7911318742744956930
+  - rid: 7911318742744956931
+  - rid: 7911318742744956932
+  - rid: 7911318742744956933
+  - rid: 7911318742744956934
+  - rid: 7911318742744956935
+  - rid: 7911318742744956936
+  - rid: 7911318742744956937
+  - rid: 7911318742744956938
+  - rid: 7911318742744956939
+  - rid: 7911318742744956940
+  - rid: 7911318742744956941
+  - rid: 7911318742744956942
+  - rid: 7911318742744956943
+  - rid: 7911318742744956944
+  - rid: 7911318742744956945
+  - rid: 7911318742744956946
+  - rid: 7911318742744956947
+  - rid: 7911318742744956948
+  - rid: 7911318742744956949
+  - rid: 7911318742744956950
+  - rid: 7911318742744956951
+  - rid: 7911318742744956952
+  - rid: 7911318742744956953
+  - rid: 7911318742744956954
+  - rid: 7911318742744956955
+  - rid: 7911318742744956956
+  - rid: 7911318742744956957
+  - rid: 7911318742744956958
+  - rid: 7911318742744956959
+  - rid: 7911318742744956960
+  - rid: 7911318742744956961
+  - rid: 7911318742744956962
+  - rid: 7911318742744956963
+  - rid: 7911318742744956964
+  - rid: 7911318742744956965
+  - rid: 7911318742744956966
+  - rid: 7911318742744956967
+  - rid: 7911318742744956968
+  - rid: 7911318742744956969
+  - rid: 7911318742744956970
+  - rid: 7911318742744956971
+  - rid: 7911318742744956972
+  - rid: 7911318742744956973
+  - rid: 7911318742744956974
+  - rid: 7911318742744956975
+  - rid: 7911318742744956976
+  - rid: 7911318742744956977
+  - rid: 7911318742744956978
+  - rid: 7911318742744956979
   backgroundColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.2901961}
   antiAliasingScalar: 1.5
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 91e55b95bfb0da643994602b42210b1e, type: 2}
   references:
     version: 2
     RefIds:
-    - rid: 7911318741399372177
+    - rid: 7911318742744956930
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0, y: 0.5000882}
         end: {x: 0.02, y: 0.54901916}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372178
+    - rid: 7911318742744956931
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.02, y: 0.54901916}
         end: {x: 0.04, y: 0.59746116}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372179
+    - rid: 7911318742744956932
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.04, y: 0.59746116}
         end: {x: 0.06, y: 0.6449303}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372180
+    - rid: 7911318742744956933
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.06, y: 0.6449303}
         end: {x: 0.08, y: 0.6909522}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372181
+    - rid: 7911318742744956934
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.08, y: 0.6909522}
         end: {x: 0.099999994, y: 0.73506707}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372182
+    - rid: 7911318742744956935
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.099999994, y: 0.73506707}
         end: {x: 0.12, y: 0.7768341}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372183
+    - rid: 7911318742744956936
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.12, y: 0.7768341}
         end: {x: 0.14, y: 0.81583595}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372184
+    - rid: 7911318742744956937
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.14, y: 0.81583595}
         end: {x: 0.16, y: 0.85168296}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372185
+    - rid: 7911318742744956938
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.16, y: 0.85168296}
         end: {x: 0.17999999, y: 0.884017}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372186
+    - rid: 7911318742744956939
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.17999999, y: 0.884017}
         end: {x: 0.19999999, y: 0.9125149}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372187
+    - rid: 7911318742744956940
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.19999999, y: 0.9125149}
         end: {x: 0.22, y: 0.936892}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372188
+    - rid: 7911318742744956941
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.22, y: 0.936892}
         end: {x: 0.24, y: 0.95690465}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372189
+    - rid: 7911318742744956942
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.24, y: 0.95690465}
         end: {x: 0.26, y: 0.972353}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372190
+    - rid: 7911318742744956943
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.26, y: 0.972353}
         end: {x: 0.28, y: 0.9830826}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372191
+    - rid: 7911318742744956944
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.28, y: 0.9830826}
         end: {x: 0.29999998, y: 0.98898625}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372192
+    - rid: 7911318742744956945
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.29999998, y: 0.98898625}
         end: {x: 0.32, y: 0.990005}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372193
+    - rid: 7911318742744956946
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.32, y: 0.990005}
         end: {x: 0.34, y: 0.98612875}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372194
+    - rid: 7911318742744956947
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.34, y: 0.98612875}
         end: {x: 0.35999998, y: 0.9773961}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372195
+    - rid: 7911318742744956948
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.35999998, y: 0.9773961}
         end: {x: 0.38, y: 0.96389425}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372196
+    - rid: 7911318742744956949
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.38, y: 0.96389425}
         end: {x: 0.39999998, y: 0.94575834}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372197
+    - rid: 7911318742744956950
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.39999998, y: 0.94575834}
         end: {x: 0.42, y: 0.9231694}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372198
+    - rid: 7911318742744956951
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.42, y: 0.9231694}
         end: {x: 0.44, y: 0.8963531}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372199
+    - rid: 7911318742744956952
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.44, y: 0.8963531}
         end: {x: 0.45999998, y: 0.8655776}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372200
+    - rid: 7911318742744956953
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.45999998, y: 0.8655776}
         end: {x: 0.48, y: 0.8311502}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372201
+    - rid: 7911318742744956954
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.48, y: 0.8311502}
         end: {x: 0.5, y: 0.79341495}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372202
+    - rid: 7911318742744956955
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.5, y: 0.79341495}
         end: {x: 0.52, y: 0.7527489}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372203
+    - rid: 7911318742744956956
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.52, y: 0.7527489}
         end: {x: 0.53999996, y: 0.7095583}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372204
+    - rid: 7911318742744956957
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.53999996, y: 0.7095583}
         end: {x: 0.56, y: 0.6642748}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372205
+    - rid: 7911318742744956958
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.56, y: 0.6642748}
         end: {x: 0.58, y: 0.61735076}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372206
+    - rid: 7911318742744956959
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.58, y: 0.61735076}
         end: {x: 0.59999996, y: 0.5692551}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372207
+    - rid: 7911318742744956960
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.59999996, y: 0.5692551}
         end: {x: 0.62, y: 0.52046835}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372208
+    - rid: 7911318742744956961
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.62, y: 0.52046835}
         end: {x: 0.64, y: 0.47147796}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372209
+    - rid: 7911318742744956962
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.64, y: 0.47147796}
         end: {x: 0.65999997, y: 0.42277345}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372210
+    - rid: 7911318742744956963
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.65999997, y: 0.42277345}
         end: {x: 0.68, y: 0.37484142}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372211
+    - rid: 7911318742744956964
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.68, y: 0.37484142}
         end: {x: 0.7, y: 0.32816082}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372212
+    - rid: 7911318742744956965
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.7, y: 0.32816082}
         end: {x: 0.71999997, y: 0.28319806}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372213
+    - rid: 7911318742744956966
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.71999997, y: 0.28319806}
         end: {x: 0.74, y: 0.2404024}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372214
+    - rid: 7911318742744956967
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.74, y: 0.2404024}
         end: {x: 0.76, y: 0.20020144}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372215
+    - rid: 7911318742744956968
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.76, y: 0.20020144}
         end: {x: 0.78, y: 0.16299681}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372216
+    - rid: 7911318742744956969
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.78, y: 0.16299681}
         end: {x: 0.79999995, y: 0.12916028}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372217
+    - rid: 7911318742744956970
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.79999995, y: 0.12916028}
         end: {x: 0.82, y: 0.099029884}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372218
+    - rid: 7911318742744956971
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.82, y: 0.099029884}
         end: {x: 0.84, y: 0.072906785}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372219
+    - rid: 7911318742744956972
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.84, y: 0.072906785}
         end: {x: 0.85999995, y: 0.05105196}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372220
+    - rid: 7911318742744956973
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.85999995, y: 0.05105196}
         end: {x: 0.88, y: 0.033683725}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372221
+    - rid: 7911318742744956974
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.88, y: 0.033683725}
         end: {x: 0.9, y: 0.020975646}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372222
+    - rid: 7911318742744956975
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.9, y: 0.020975646}
         end: {x: 0.91999996, y: 0.01305468}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372223
+    - rid: 7911318742744956976
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.91999996, y: 0.01305468}
         end: {x: 0.94, y: 0.01}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372224
+    - rid: 7911318742744956977
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.94, y: 0.01}
         end: {x: 0.96, y: 0.011842104}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372225
+    - rid: 7911318742744956978
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.96, y: 0.011842104}
         end: {x: 0.97999996, y: 0.018562587}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318741399372226
+    - rid: 7911318742744956979
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
         start: {x: 0.97999996, y: 0.018562587}
@@ -1339,6 +1339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawCommands:
   - rid: 7911318741399372126
+  - rid: 7911318742744956928
+  - rid: 7911318742744956929
   backgroundColor: {r: 1, g: 1, b: 1, a: 1}
   antiAliasingScalar: 1
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 91e55b95bfb0da643994602b42210b1e, type: 2}
@@ -1350,9 +1352,27 @@ MonoBehaviour:
       data:
         center: {x: 0.5, y: 0.5}
         startAngleInTurns: 0
-        endAngleInTurns: 0.5
-        radius: 0.27
+        endAngleInTurns: 0.72
+        radius: 0.2
         color: {r: 0.6981132, g: 0.18770024, b: 0.18770024, a: 1}
+        thickness: 0.1
+    - rid: 7911318742744956928
+      type: {class: RadialLine, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 1}
+        radius: 0.15
+        angleInTurns: 0
+        color: {r: 0, g: 0, b: 0, a: 1}
+        thickness: 0.01
+    - rid: 7911318742744956929
+      type: {class: RadialLine, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
+      data:
+        center: {x: 0.5, y: 0.5}
+        startEndRadialFraction: {x: 0, y: 1}
+        radius: 0.25
+        angleInTurns: -0.9
+        color: {r: 0, g: 0, b: 0, a: 1}
         thickness: 0.01
 --- !u!23 &1479438082
 MeshRenderer:
