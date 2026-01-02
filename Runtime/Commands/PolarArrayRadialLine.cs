@@ -32,6 +32,8 @@ namespace EyE.Graphics
                     prototype.color,
                     prototype.thickness
                 );
+            workingPrototype.blendMode = blendMode;
+            workingPrototype.textureReference = textureReference;
 
             for (int i = 0; i < count; i++)
             {
@@ -72,7 +74,8 @@ namespace EyE.Graphics
                     prototype.color,
                     prototype.thickness
                 );
-
+            workingPrototype.blendMode = blendMode;
+            workingPrototype.textureReference = textureReference;
             float angleStepTurns = totalAngleSpanTurns / count;
             for (int i = 0; i < count; i++)
             {

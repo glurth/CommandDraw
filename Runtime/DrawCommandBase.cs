@@ -16,7 +16,8 @@ namespace EyE.Graphics
         public const int STRIDE = sizeof(float) * 2 * 3 // start + end + thirdCorner
             + sizeof(float) * 4 // color
             + sizeof(float) * 2 // radius + thickness
-            + sizeof(int) * 2; // commandType + objID
+            + sizeof(int) * 2 // commandType + objID
+            + sizeof(int)* 2; // blend mode and textureindex
 
         /// <summary>Command type: simple line.</summary>
         public const int CMD_LINE = 0;
@@ -34,6 +35,10 @@ namespace EyE.Graphics
         public const int CMD_CAPSULE = 6;
         /// <summary>Command type: triangle.</summary>
         public const int CMD_TRIANGLE = 7;
+
+        public const int CMD_BLEND_NORMAL = 0;
+        public const int CMD_BLEND_ADDITIVE = 1;
+        public const int CMD_BLEND_MULTIPLY = 2;
 
         /// <summary>
         /// Start position or primary reference point.
@@ -109,12 +114,18 @@ namespace EyE.Graphics
         /// <summary>Unique object identifier for tracking or selection.</summary>
         public int objectID;
 
+        public int blendMode;
+
+        public int texIndex;
+
         /// <summary>
         /// Constructs a packed draw command with all fields specified.
         /// </summary>
-        public PackedDrawCommand(int commandType, Vector2 start, Vector2 end, Vector2 thirdCorner, Color color, float radius, float thickness, int objID)
+        public PackedDrawCommand(int commandType, Vector2 start, Vector2 end, Vector2 thirdCorner, Color color, float radius, float thickness, int objID,int texIndex=-1, int blendMode = CMD_BLEND_NORMAL)
         {
             this.commandType = commandType;
+            this.texIndex = texIndex;
+            this.blendMode = blendMode;
             this.start = start;
             this.end = end;
             this.thirdCorner = thirdCorner;
@@ -151,6 +162,13 @@ namespace EyE.Graphics
     [System.Serializable]
     public abstract class DrawCommandBase
     {
+        /// <summary>
+        /// defines which texture should be used when drawing the shape
+        /// </summary>
+        public int textureReference = -1;
+
+        public int blendMode = 0;
+
         /// <summary>
         /// Initialize any internal data or buffers needed for this command.
         /// </summary>

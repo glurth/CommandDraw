@@ -77,7 +77,7 @@ namespace EyE.Graphics
                 color,
                 rotationTurns * Mathf.PI*2f,
                 0.0f,
-                objID
+                objID, textureReference, blendMode
             );
             cmd.objectID = objID;
             return new List<PackedDrawCommand> { cmd };

@@ -32,6 +32,7 @@ namespace EyE.Graphics
         /// <summary>Thickness of the stroke. Maps to <see cref="PackedDrawCommand.thickness"/>.</summary>
         public float thickness;
 
+
         /// <summary>
         /// Converts this arc into a list of packed GPU commands.
         /// Generates a single <see cref="PackedDrawCommand"/> of type <see cref="PackedDrawCommand.CMD_ARC"/>.
@@ -50,7 +51,7 @@ namespace EyE.Graphics
                 color,
                 radius,
                 thickness,
-                objID
+                objID,textureReference,blendMode
             );
 
             return new List<PackedDrawCommand>() { c };

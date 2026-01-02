@@ -89,7 +89,7 @@ namespace EyE.Graphics
                 color,
                 0.0f,
                 0.0f,
-                objID
+                objID, textureReference, blendMode
             );
 
             cmd.objectID = objID;

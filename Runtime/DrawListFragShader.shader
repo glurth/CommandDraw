@@ -3,6 +3,7 @@ Shader "Unlit/DrawListFragShader"
     Properties
     {
         _BackgroundColor("BackgroundColor", Color) = (0,0,0,1)
+         _TexArray("Texture Array", 2DArray) = "" {}
     }
 
         SubShader
@@ -80,12 +81,16 @@ Shader "Unlit/DrawListFragShader"
                 float  thickness;   // stroke thickness for stroked shapes; ignored for filled
                 int    commandType;
                 int    objectID;
+                int blendMode;
+                int texIndex;
             };
 
             StructuredBuffer<DrawCommand> _Commands;
             float _AntiAliasingScalar;
             int _CommandCount;
             float4 _BackgroundColor;
+            Texture2DArray _TexArray;
+            SamplerState sampler_TexArray;
 
             struct appdata { float4 vertex:POSITION; float2 uv:TEXCOORD0; };
             struct v2f { float2 uv:TEXCOORD0; float4 vertex:SV_POSITION; };
@@ -259,10 +264,12 @@ Shader "Unlit/DrawListFragShader"
             // ------------------------------------------------------------------
 
             // cmdInt contains both shape type (lower 4 bits) and blend mode (upper 4 bits)
-            void UnpackCommandType(int cmdInt, out int shapeType, out int blendMode)
+            void UnpackCommandType(int cmdInt, out int shapeType, out int blendMode, out int textureIndex)
             {
-                shapeType = cmdInt & 0xF;         // lower 4 bits
+                textureIndex = cmdInt & 0xF; //bottom 4 bits
                 blendMode = (cmdInt >> 4) & 0xF; // next 4 bits
+                shapeType = (cmdInt >> 8) & 0xF; // next 4 bits
+                shapeType = cmdInt;
             }
             float4 DrawCommands(float2 uv)
             {
@@ -283,9 +290,10 @@ Shader "Unlit/DrawListFragShader"
                     float d = 0.0;
                     float halfT = cmd.thickness * 0.5;
 
-                    int shapeType;// = cmd.commandType;
-                    int blendMode;
-                    UnpackCommandType(cmd.commandType, shapeType, blendMode);
+                    int shapeType = cmd.commandType;
+                    int blendMode = cmd.blendMode;
+                    int texIndex= cmd.texIndex;
+                    //UnpackCommandType(cmd.commandType, shapeType, blendMode, texIndex);
 
                     if (shapeType == CMD_LINE)
                     {
@@ -338,10 +346,16 @@ Shader "Unlit/DrawListFragShader"
                         minD = d;
                     }
 
+                    if (texIndex !=0)// 8)
+                    {
+                        cmd.color *= _TexArray.Sample(sampler_TexArray, float3(uv, texIndex));// SAMPLE_TEXTURE2D_ARRAY(_TexArray, sampler_TexArray, uv, texIndex);
+                    }
+
                     if (cmd.objectID != nextID)
                     {
                         float alpha;
                         alpha = smoothstep(pxAA, 0, minD);
+
                         /*float finalAlpha = cmd.color.a * alpha;
 
                         // premultiplied stroke

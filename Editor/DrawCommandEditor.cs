@@ -16,6 +16,7 @@ namespace EyE.Editor.Graphics
         SerializedProperty backgroundColorProp;
         SerializedProperty textueBasedMaterialProp;
         SerializedProperty antiAliasingScalarProp;
+        SerializedProperty textureArrayProp;
 
         private static System.Type[] commandTypes=null;
 
@@ -63,6 +64,7 @@ namespace EyE.Editor.Graphics
             backgroundColorProp = serializedObject.FindProperty("backgroundColor");
             textueBasedMaterialProp = serializedObject.FindProperty("textureBasedDisplayMaterial");
             antiAliasingScalarProp = serializedObject.FindProperty("antiAliasingScalar");
+            textureArrayProp = serializedObject.FindProperty("textureArray");
 
             list = new ReorderableList(serializedObject, commandsProp, true, true, true, true);
 
@@ -127,10 +129,29 @@ namespace EyE.Editor.Graphics
             EditorGUILayout.PropertyField(backgroundColorProp);
             EditorGUILayout.PropertyField(antiAliasingScalarProp);
             EditorGUILayout.PropertyField(textueBasedMaterialProp);
+            DrawFixedTextureArray(textureArrayProp);
+             
 
             DrawPreListProperties();
             list.DoLayoutList();
             serializedObject.ApplyModifiedProperties();
+        }
+
+        void DrawFixedTextureArray(SerializedProperty arrayProp, string label = "Textures")
+        {
+            if (arrayProp.arraySize != 8)
+                arrayProp.arraySize = 8;
+
+            arrayProp.isExpanded = EditorGUILayout.Foldout(arrayProp.isExpanded, label, true);
+            if (!arrayProp.isExpanded) return;
+
+            EditorGUI.indentLevel++;
+            for (int i = 0; i < 8; i++)
+            {
+                SerializedProperty element = arrayProp.GetArrayElementAtIndex(i);
+                EditorGUILayout.PropertyField(element, new GUIContent("Texture " + i));
+            }
+            EditorGUI.indentLevel--;
         }
     }
 }

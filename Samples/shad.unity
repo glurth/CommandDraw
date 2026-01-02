@@ -170,408 +170,509 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawCommands:
-  - rid: 7911318742744956930
-  - rid: 7911318742744956931
-  - rid: 7911318742744956932
-  - rid: 7911318742744956933
-  - rid: 7911318742744956934
-  - rid: 7911318742744956935
-  - rid: 7911318742744956936
-  - rid: 7911318742744956937
-  - rid: 7911318742744956938
-  - rid: 7911318742744956939
-  - rid: 7911318742744956940
-  - rid: 7911318742744956941
-  - rid: 7911318742744956942
-  - rid: 7911318742744956943
-  - rid: 7911318742744956944
-  - rid: 7911318742744956945
-  - rid: 7911318742744956946
-  - rid: 7911318742744956947
-  - rid: 7911318742744956948
-  - rid: 7911318742744956949
-  - rid: 7911318742744956950
-  - rid: 7911318742744956951
-  - rid: 7911318742744956952
-  - rid: 7911318742744956953
-  - rid: 7911318742744956954
-  - rid: 7911318742744956955
-  - rid: 7911318742744956956
-  - rid: 7911318742744956957
-  - rid: 7911318742744956958
-  - rid: 7911318742744956959
-  - rid: 7911318742744956960
-  - rid: 7911318742744956961
-  - rid: 7911318742744956962
-  - rid: 7911318742744956963
-  - rid: 7911318742744956964
-  - rid: 7911318742744956965
-  - rid: 7911318742744956966
-  - rid: 7911318742744956967
-  - rid: 7911318742744956968
-  - rid: 7911318742744956969
-  - rid: 7911318742744956970
-  - rid: 7911318742744956971
-  - rid: 7911318742744956972
-  - rid: 7911318742744956973
-  - rid: 7911318742744956974
-  - rid: 7911318742744956975
-  - rid: 7911318742744956976
-  - rid: 7911318742744956977
-  - rid: 7911318742744956978
-  - rid: 7911318742744956979
+  - rid: 3712722074077758141
+  - rid: 3712722074077758142
+  - rid: 3712722074077758143
+  - rid: 3712722074077758144
+  - rid: 3712722074077758145
+  - rid: 3712722074077758146
+  - rid: 3712722074077758147
+  - rid: 3712722074077758148
+  - rid: 3712722074077758149
+  - rid: 3712722074077758150
+  - rid: 3712722074077758151
+  - rid: 3712722074077758152
+  - rid: 3712722074077758153
+  - rid: 3712722074077758154
+  - rid: 3712722074077758155
+  - rid: 3712722074077758156
+  - rid: 3712722074077758157
+  - rid: 3712722074077758158
+  - rid: 3712722074077758159
+  - rid: 3712722074077758160
+  - rid: 3712722074077758161
+  - rid: 3712722074077758162
+  - rid: 3712722074077758163
+  - rid: 3712722074077758164
+  - rid: 3712722074077758165
+  - rid: 3712722074077758166
+  - rid: 3712722074077758167
+  - rid: 3712722074077758168
+  - rid: 3712722074077758169
+  - rid: 3712722074077758170
+  - rid: 3712722074077758171
+  - rid: 3712722074077758172
+  - rid: 3712722074077758173
+  - rid: 3712722074077758174
+  - rid: 3712722074077758175
+  - rid: 3712722074077758176
+  - rid: 3712722074077758177
+  - rid: 3712722074077758178
+  - rid: 3712722074077758179
+  - rid: 3712722074077758180
+  - rid: 3712722074077758181
+  - rid: 3712722074077758182
+  - rid: 3712722074077758183
+  - rid: 3712722074077758184
+  - rid: 3712722074077758185
+  - rid: 3712722074077758186
+  - rid: 3712722074077758187
+  - rid: 3712722074077758188
+  - rid: 3712722074077758189
+  - rid: 3712722074077758190
+  textureArray: []
   backgroundColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.2901961}
   antiAliasingScalar: 1.5
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 91e55b95bfb0da643994602b42210b1e, type: 2}
   references:
     version: 2
     RefIds:
-    - rid: 7911318742744956930
+    - rid: 3712722074077758141
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0, y: 0.5000882}
         end: {x: 0.02, y: 0.54901916}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956931
+    - rid: 3712722074077758142
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.02, y: 0.54901916}
         end: {x: 0.04, y: 0.59746116}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956932
+    - rid: 3712722074077758143
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.04, y: 0.59746116}
         end: {x: 0.06, y: 0.6449303}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956933
+    - rid: 3712722074077758144
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.06, y: 0.6449303}
         end: {x: 0.08, y: 0.6909522}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956934
+    - rid: 3712722074077758145
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.08, y: 0.6909522}
         end: {x: 0.099999994, y: 0.73506707}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956935
+    - rid: 3712722074077758146
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.099999994, y: 0.73506707}
         end: {x: 0.12, y: 0.7768341}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956936
+    - rid: 3712722074077758147
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.12, y: 0.7768341}
         end: {x: 0.14, y: 0.81583595}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956937
+    - rid: 3712722074077758148
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.14, y: 0.81583595}
         end: {x: 0.16, y: 0.85168296}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956938
+    - rid: 3712722074077758149
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.16, y: 0.85168296}
         end: {x: 0.17999999, y: 0.884017}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956939
+    - rid: 3712722074077758150
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.17999999, y: 0.884017}
         end: {x: 0.19999999, y: 0.9125149}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956940
+    - rid: 3712722074077758151
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.19999999, y: 0.9125149}
         end: {x: 0.22, y: 0.936892}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956941
+    - rid: 3712722074077758152
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.22, y: 0.936892}
         end: {x: 0.24, y: 0.95690465}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956942
+    - rid: 3712722074077758153
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.24, y: 0.95690465}
         end: {x: 0.26, y: 0.972353}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956943
+    - rid: 3712722074077758154
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.26, y: 0.972353}
         end: {x: 0.28, y: 0.9830826}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956944
+    - rid: 3712722074077758155
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.28, y: 0.9830826}
         end: {x: 0.29999998, y: 0.98898625}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956945
+    - rid: 3712722074077758156
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.29999998, y: 0.98898625}
         end: {x: 0.32, y: 0.990005}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956946
+    - rid: 3712722074077758157
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.32, y: 0.990005}
         end: {x: 0.34, y: 0.98612875}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956947
+    - rid: 3712722074077758158
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.34, y: 0.98612875}
         end: {x: 0.35999998, y: 0.9773961}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956948
+    - rid: 3712722074077758159
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.35999998, y: 0.9773961}
         end: {x: 0.38, y: 0.96389425}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956949
+    - rid: 3712722074077758160
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.38, y: 0.96389425}
         end: {x: 0.39999998, y: 0.94575834}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956950
+    - rid: 3712722074077758161
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.39999998, y: 0.94575834}
         end: {x: 0.42, y: 0.9231694}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956951
+    - rid: 3712722074077758162
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.42, y: 0.9231694}
         end: {x: 0.44, y: 0.8963531}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956952
+    - rid: 3712722074077758163
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.44, y: 0.8963531}
         end: {x: 0.45999998, y: 0.8655776}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956953
+    - rid: 3712722074077758164
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.45999998, y: 0.8655776}
         end: {x: 0.48, y: 0.8311502}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956954
+    - rid: 3712722074077758165
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.48, y: 0.8311502}
         end: {x: 0.5, y: 0.79341495}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956955
+    - rid: 3712722074077758166
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.5, y: 0.79341495}
         end: {x: 0.52, y: 0.7527489}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956956
+    - rid: 3712722074077758167
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.52, y: 0.7527489}
         end: {x: 0.53999996, y: 0.7095583}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956957
+    - rid: 3712722074077758168
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.53999996, y: 0.7095583}
         end: {x: 0.56, y: 0.6642748}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956958
+    - rid: 3712722074077758169
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.56, y: 0.6642748}
         end: {x: 0.58, y: 0.61735076}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956959
+    - rid: 3712722074077758170
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.58, y: 0.61735076}
         end: {x: 0.59999996, y: 0.5692551}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956960
+    - rid: 3712722074077758171
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.59999996, y: 0.5692551}
         end: {x: 0.62, y: 0.52046835}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956961
+    - rid: 3712722074077758172
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.62, y: 0.52046835}
         end: {x: 0.64, y: 0.47147796}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956962
+    - rid: 3712722074077758173
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.64, y: 0.47147796}
         end: {x: 0.65999997, y: 0.42277345}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956963
+    - rid: 3712722074077758174
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.65999997, y: 0.42277345}
         end: {x: 0.68, y: 0.37484142}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956964
+    - rid: 3712722074077758175
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.68, y: 0.37484142}
         end: {x: 0.7, y: 0.32816082}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956965
+    - rid: 3712722074077758176
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.7, y: 0.32816082}
         end: {x: 0.71999997, y: 0.28319806}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956966
+    - rid: 3712722074077758177
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.71999997, y: 0.28319806}
         end: {x: 0.74, y: 0.2404024}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956967
+    - rid: 3712722074077758178
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.74, y: 0.2404024}
         end: {x: 0.76, y: 0.20020144}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956968
+    - rid: 3712722074077758179
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.76, y: 0.20020144}
         end: {x: 0.78, y: 0.16299681}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956969
+    - rid: 3712722074077758180
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.78, y: 0.16299681}
         end: {x: 0.79999995, y: 0.12916028}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956970
+    - rid: 3712722074077758181
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.79999995, y: 0.12916028}
         end: {x: 0.82, y: 0.099029884}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956971
+    - rid: 3712722074077758182
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.82, y: 0.099029884}
         end: {x: 0.84, y: 0.072906785}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956972
+    - rid: 3712722074077758183
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.84, y: 0.072906785}
         end: {x: 0.85999995, y: 0.05105196}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956973
+    - rid: 3712722074077758184
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.85999995, y: 0.05105196}
         end: {x: 0.88, y: 0.033683725}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956974
+    - rid: 3712722074077758185
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.88, y: 0.033683725}
         end: {x: 0.9, y: 0.020975646}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956975
+    - rid: 3712722074077758186
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.9, y: 0.020975646}
         end: {x: 0.91999996, y: 0.01305468}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956976
+    - rid: 3712722074077758187
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.91999996, y: 0.01305468}
         end: {x: 0.94, y: 0.01}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956977
+    - rid: 3712722074077758188
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.94, y: 0.01}
         end: {x: 0.96, y: 0.011842104}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956978
+    - rid: 3712722074077758189
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.96, y: 0.011842104}
         end: {x: 0.97999996, y: 0.018562587}
         thickness: 0.01
         color: {r: 1, g: 0, b: 0, a: 1}
-    - rid: 7911318742744956979
+    - rid: 3712722074077758190
       type: {class: LineDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         start: {x: 0.97999996, y: 0.018562587}
         end: {x: 1, y: 0.030094316}
         thickness: 0.01
@@ -787,6 +888,7 @@ MonoBehaviour:
   - rid: -2
   - rid: -2
   - rid: -2
+  textureArray: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 0}
   antiAliasingScalar: 1.5
   textureBasedDisplayMaterial: {fileID: 2100000, guid: db817c6d45095bd42b5632048d331c85, type: 2}
@@ -892,6 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawCommands: []
+  textureArray: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 0}
   antiAliasingScalar: 1
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 672629e9cd56cbf49a6ec87b3ca23183, type: 2}
@@ -1029,6 +1132,7 @@ MonoBehaviour:
   - rid: -2
   - rid: -2
   - rid: -2
+  textureArray: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 0}
   antiAliasingScalar: 1.5
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 91e55b95bfb0da643994602b42210b1e, type: 2}
@@ -1157,6 +1261,7 @@ MonoBehaviour:
   - rid: -2
   - rid: -2
   - rid: -2
+  textureArray: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 0}
   antiAliasingScalar: 1.5
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 672629e9cd56cbf49a6ec87b3ca23183, type: 2}
@@ -1341,33 +1446,65 @@ MonoBehaviour:
   - rid: 7911318741399372126
   - rid: 7911318742744956928
   - rid: 7911318742744956929
-  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  - rid: 3712722074077757890
+  textureArray:
+  - {fileID: 2800000, guid: b4ed77e9b77df1549977d56a2519500a, type: 3}
+  - {fileID: 2800000, guid: 0b15dd8e230650944946b0cc294b5d62, type: 3}
+  - {fileID: 2800000, guid: f53e3f1b72a548846a13df397feffd57, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  backgroundColor: {r: 0.37260482, g: 0.81960785, b: 0.32941177, a: 1}
   antiAliasingScalar: 1
   textureBasedDisplayMaterial: {fileID: 2100000, guid: 91e55b95bfb0da643994602b42210b1e, type: 2}
   references:
     version: 2
     RefIds:
+    - rid: 3712722074077757890
+      type: {class: PolarRadialLineArray, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
+      data:
+        textureReference: -1
+        blendMode: 0
+        prototype:
+          textureReference: 2
+          blendMode: 0
+          center: {x: 0.5, y: 0.5}
+          startEndRadialFraction: {x: 0.5, y: 0.9}
+          radius: 0.25
+          angleInTurns: 0
+          color: {r: 1, g: 1, b: 1, a: 0.33333334}
+          thickness: 0.1
+        angleStepTurns: 0.1
+        count: 5
     - rid: 7911318741399372126
       type: {class: ArcDrawCommand, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: 1
+        blendMode: 0
         center: {x: 0.5, y: 0.5}
         startAngleInTurns: 0
-        endAngleInTurns: 0.72
+        endAngleInTurns: 2.28
         radius: 0.2
-        color: {r: 0.6981132, g: 0.18770024, b: 0.18770024, a: 1}
+        color: {r: 0.8962264, g: 0.2510562, b: 0.2325116, a: 1}
         thickness: 0.1
     - rid: 7911318742744956928
       type: {class: RadialLine, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: 0
+        blendMode: 0
         center: {x: 0.5, y: 0.5}
         startEndRadialFraction: {x: 0, y: 1}
         radius: 0.15
         angleInTurns: 0
-        color: {r: 0, g: 0, b: 0, a: 1}
+        color: {r: 1, g: 1, b: 1, a: 1}
         thickness: 0.01
     - rid: 7911318742744956929
       type: {class: RadialLine, ns: EyE.Graphics, asm: EyE.CommandDraw.Runtime}
       data:
+        textureReference: -1
+        blendMode: 0
         center: {x: 0.5, y: 0.5}
         startEndRadialFraction: {x: 0, y: 1}
         radius: 0.25
@@ -1567,6 +1704,7 @@ MonoBehaviour:
   - rid: -2
   - rid: -2
   - rid: -2
+  textureArray: []
   backgroundColor: {r: 1, g: 1, b: 1, a: 0}
   antiAliasingScalar: 1.5
   textureBasedDisplayMaterial: {fileID: 2100000, guid: db817c6d45095bd42b5632048d331c85, type: 2}

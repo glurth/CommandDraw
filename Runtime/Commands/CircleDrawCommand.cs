@@ -38,7 +38,7 @@ namespace EyE.Graphics
                 color,
                 radius,
                 thickness,
-                objID
+                objID, textureReference, blendMode
             );
 
             return new List<PackedDrawCommand>() { c };

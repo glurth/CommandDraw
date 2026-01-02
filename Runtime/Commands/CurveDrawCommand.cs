@@ -48,7 +48,7 @@ namespace EyE.Graphics
                         color,
                         0f,
                         thickness,
-                        objID
+                        objID, textureReference, blendMode
                     ));
                     return;
                 }

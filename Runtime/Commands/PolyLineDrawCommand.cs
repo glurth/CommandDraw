@@ -82,7 +82,7 @@ namespace EyE.Graphics
                     color,
                     0,
                     thickness,
-                    objID
+                    objID, textureReference, blendMode
                 );
                 lines.Add(lineSegment);
             }

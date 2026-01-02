@@ -18,6 +18,7 @@ namespace EyE.Graphics
         [SerializeReference]
         public List<DrawCommandBase> drawCommands = new List<DrawCommandBase>();
 
+        public Texture2D[] textureArray= new Texture2D[8];
 
 
         /// <summary>
@@ -116,7 +117,7 @@ namespace EyE.Graphics
 
         private void CreateDrawShaderMaterialIfNeeded()
         {
-            if (drawListFragShaderBasedMaterial != null) return;
+            //if (drawListFragShaderBasedMaterial != null) return;
             Shader drawListFragShader = Shader.Find(ShaderName);
             if (drawListFragShader == null)
                 Debug.LogError("Unable to find shader `" + ShaderName + "`");
@@ -124,6 +125,15 @@ namespace EyE.Graphics
                 Debug.Log("Found shader `" + ShaderName + "`");
 
             drawListFragShaderBasedMaterial = new Material(drawListFragShader);
+            Texture2DArray texArray = new Texture2DArray(textureArray[0].width, textureArray[0].height, 8, textureArray[0].format, true);
+
+            for (int i = 0; i < 8; i++)
+            {
+                if(textureArray[i]!=null)
+                    UnityEngine.Graphics.CopyTexture(textureArray[i], 0, 0, texArray, i, 0);
+            }
+
+            drawListFragShaderBasedMaterial.SetTexture("_TexArray", texArray);
         }
 
         /// <summary>

@@ -72,7 +72,7 @@ namespace EyE.Graphics
                 color,
                 radius,
                 0.0f,
-                objID
+                objID, textureReference, blendMode
             );
             cmd.objectID = objID;
             return new List<PackedDrawCommand> { cmd };

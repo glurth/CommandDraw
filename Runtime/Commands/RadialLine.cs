@@ -134,7 +134,7 @@ namespace EyE.Graphics
                 color,
                 0.0f,         // radius unused for lines
                 thickness,
-                objID
+                objID, textureReference, blendMode
             );
 
             cmd.objectID = objID;
