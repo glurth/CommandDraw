@@ -125,15 +125,18 @@ namespace EyE.Graphics
                 Debug.Log("Found shader `" + ShaderName + "`");
 
             drawListFragShaderBasedMaterial = new Material(drawListFragShader);
-            Texture2DArray texArray = new Texture2DArray(textureArray[0].width, textureArray[0].height, 8, textureArray[0].format, true);
-
-            for (int i = 0; i < 8; i++)
+            if (textureArray != null && textureArray.Length > 0 && textureArray[0] != null)
             {
-                if(textureArray[i]!=null)
-                    UnityEngine.Graphics.CopyTexture(textureArray[i], 0, 0, texArray, i, 0);
-            }
+                Texture2DArray texArray = new Texture2DArray(textureArray[0].width, textureArray[0].height, 8, textureArray[0].format, true);
 
-            drawListFragShaderBasedMaterial.SetTexture("_TexArray", texArray);
+                for (int i = 0; i < 8; i++)
+                {
+                    if (textureArray[i] != null)
+                        UnityEngine.Graphics.CopyTexture(textureArray[i], 0, 0, texArray, i, 0);
+                }
+
+                drawListFragShaderBasedMaterial.SetTexture("_TexArray", texArray);
+            }
         }
 
         /// <summary>

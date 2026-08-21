@@ -346,9 +346,10 @@ Shader "Unlit/DrawListFragShader"
                         minD = d;
                     }
 
-                    if (texIndex !=0)// 8)
+                    if (texIndex >=0 && texIndex<8)
                     {
-                        cmd.color *= _TexArray.Sample(sampler_TexArray, float3(uv, texIndex));// SAMPLE_TEXTURE2D_ARRAY(_TexArray, sampler_TexArray, uv, texIndex);
+                        float4 texC = _TexArray.Sample(sampler_TexArray, float3(uv, texIndex));// SAMPLE_TEXTURE2D_ARRAY(_TexArray, sampler_TexArray, uv, texIndex);
+                        cmd.color *= texC;// BlendNormal(cmd.color, texC, texC.a);
                     }
 
                     if (cmd.objectID != nextID)
@@ -356,16 +357,6 @@ Shader "Unlit/DrawListFragShader"
                         float alpha;
                         alpha = smoothstep(pxAA, 0, minD);
 
-                        /*float finalAlpha = cmd.color.a * alpha;
-
-                        // premultiplied stroke
-                        float3 srcRGB = cmd.color.rgb * finalAlpha;
-                        float  srcA = finalAlpha;
-
-                        // premultiplied over existing outColor
-                        outColor.rgb = srcRGB + outColor.rgb * (1.0 - srcA);
-                        outColor.a = srcA + outColor.a * (1.0 - srcA);
-                        */
                         if (blendMode == BLEND_NORMAL)
                             outColor = BlendNormal(outColor, cmd.color, alpha);
                         else if (blendMode == BLEND_ADDITIVE)
